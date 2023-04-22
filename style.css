@@ -7,8 +7,22 @@ body{
 }
 
 
-body, h1{
-    font: white;
+
+h1{
+    display: flex;
+    justify-content: center;
     font-family: 'Courier New';
     font-style: bold;
+    color: white;
+    margin-top: 50px;
+}
+
+
+#time, #daysOfWk{
+    display: flex;
+    justify-content: center;
+    font-style: bold;
+    font-size: 70px;
+    color: white;
+
 }

@@ -3,11 +3,11 @@
     
       //return new date
     const date = new Date();
-    let day = date.getDate();
+    let daysOfTheWeek =["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    let days = daysOfTheWeek[date.getDay()];
+    let dy = date.getDay();
     let month = date.getMonth()+1;
     let year = date.getFullYear();
-    const daysOfTheWeek =["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday",]
-    
     const daysOfTheWeekMonths =[
         "January","February","March","April","May","June","July","August","September",
         "October","November","December"
@@ -55,7 +55,7 @@
     if(month == 12){
         month = daysOfTheWeekMonths[11]
     }
-    document.getElementById("daysOfWk").innerHTML = `${month} ${day},${year}`;
+    document.getElementById("daysOfWk").innerHTML = `${days},${month} ${dy} ${year}`;
     
 }
 
