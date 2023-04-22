@@ -5,7 +5,7 @@
     const date = new Date();
     let daysOfTheWeek =["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
     let days = daysOfTheWeek[date.getDay()];
-    let dy = date.getDay();
+    let dy = date.getDate();
     let month = date.getMonth()+1;
     let year = date.getFullYear();
     const daysOfTheWeekMonths =[
